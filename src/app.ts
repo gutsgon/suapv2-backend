@@ -10,6 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
-app.use(routes)
+app.use('/api', routes)
 
 export { app };
