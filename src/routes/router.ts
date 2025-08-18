@@ -7,7 +7,7 @@ const routes = Router();
 // Rota raiz
 /**
  * @openapi
- * /:
+ * /api/:
  *   get:
  *     summary: Raiz da API
  *     tags:
@@ -23,7 +23,7 @@ routes.get('/', (request: Request, response: Response) => {
 // Rota para Listar todas as disciplinas por curso
 /**
  * @openapi
- * /disciplinas_por_curso:
+ * /api/disciplinas_por_curso:
  *   get:
  *     summary: Listar todas as disciplinas por curso
  *     tags:
