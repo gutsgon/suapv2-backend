@@ -12,4 +12,5 @@ RUN ./node_modules/.bin/prisma generate --schema=./src/data/prisma/schema.prisma
 
 EXPOSE 3333
 
+RUN chmod +x node_modules/.bin/nodemon
 CMD ["npm", "run", "dev"]
