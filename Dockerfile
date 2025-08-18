@@ -1,4 +1,4 @@
-FROM node
+FROM node:18-alphine
 
 WORKDIR /app
 
@@ -7,6 +7,7 @@ RUN npm install
 
 COPY . .
 
+RUN chmod +x ./node_modules/.bin/prisma
 RUN ./node_modules/.bin/prisma generate --schema=./src/data/prisma/schema.prisma
 
 EXPOSE 3333
